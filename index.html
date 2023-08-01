@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-  
+
 <body>
 
   <style>
@@ -25,15 +25,15 @@
 
     <nav class="inline-block">
       <ul>
-        <li class="inline-block"><a href="#">About</a></li>
-        <li class="inline-block"><a href="#">Skills</a></li>
-        <li class="inline-block"><a href="#">Work</a></li>
+        <li class="inline-block"><a href="#aboutMe-container">About</a></li>
+        <li class="inline-block"><a href="#mySkills-container">Skills</a></li>
+        <li class="inline-block"><a href="#myWork-Grid">Work</a></li>
         <li class="inline-block"><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
+  <section id="hero-container" class="hero">
     <h1>
       Hello, I'm 
     </h1>
@@ -43,7 +43,7 @@
     </h3>
   </section>
 
-  <section class="aboutMe">
+  <section id="aboutMe-container" class="aboutMe">
     <div class="cs-container">
       <h2>
         Allow Me to Introduce Myself
@@ -66,7 +66,7 @@
   </section>
 
    <!--  My Skills section coded using CSS flex -->
-   <section id="mySkills">
+   <section id="mySkills-container" class="mySkillsSection">
     <h4>
       My Skills
     </h4>
@@ -168,5 +168,8 @@
       <li class="inline-block"><a href="#">Contact</a></li>
     </ul>
   </footer>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="/js/index.js"> </script>
 </body>
 </html>
