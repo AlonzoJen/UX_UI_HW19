@@ -1,0 +1,195 @@
+body {
+  height: 100%;
+  margin: 0% auto;
+  font-family: Edita, Utopia Std, sans-serif;
+  font-size: ;
+
+}
+
+/* Navigation CSS */
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+  padding: 3px 10px 0px 10px;
+}
+.logo {
+  width: 23%;
+  padding: 1%;
+  text-align: center;
+}
+nav {
+  width: 73%;
+  padding: 1%;
+  text-align: center;
+  background-color: #1c1c1c;
+}
+ul {
+  width: 50%;
+  margin-left: auto;
+  display: inline-block;
+ /* vertical-align: top; */
+  margin-left: auto;
+  color: #fafaff;
+  font-family: edita, serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+}
+.navigation {
+  background-color: #1c1c1c;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+}
+a:link {
+  color: #FAFAFF;
+  font-size: 28px;
+}
+a:visited {
+  color: #FAFAFF;
+  text-decoration: none;
+}
+a:hover {
+  color: #990349;
+  text-decoration: none;
+}
+a:active {
+  color: #FAFAFF;
+  text-decoration: none;
+}
+
+/* Hero CSS */
+.hero {
+  height: 100%;
+  padding: 15px;
+  background-color: rgba(250, 250, 255, 0.5);
+  text-align: center;
+  box-shadow: #3d434d;
+}
+
+/* About Me CSS */
+.cs-container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0px 0px 100px 0px;
+}
+.aboutMe {
+  height: 75%;
+  width: 75%;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(250, 250, 255);
+  text-align: center;
+}
+.girlOnSwing {
+  border-radius: 100%;
+  padding: 10px;
+  background-color: rgba(153, 3, 73, 0.1);
+}
+.myButton {
+  background-color: #3d434d;
+  text-align: center;
+  color: #FAFAFF;
+  padding: 11px 25px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* Footer CSS */
+
+footer {
+  background-color: #373738;
+  width: 100%;
+  bottom: 0px;
+  /* position: sticky; */
+  /* position: fixed; */
+  text-align: center;
+}
+
+/* My Skills CSS */
+.flex-container {
+  display: flex;
+}
+
+/* Typography CSS */ 
+p {
+  font-family: edita, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  color: #3d434d;
+}
+
+h1 {
+  font-family: edita, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 96px;
+  text-align: center;
+  color: #3d434d;
+}
+h2 {
+  font-family: edita, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 70px;
+  text-align: center;
+  color: #990349;
+}
+h3 {
+  font-family: edita, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+  text-align: center;
+  color: #FAFAFF;
+}
+h4 {
+  font-family: "utopia-std-subhead", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  text-align: center;
+  color: #1c1c1c;
+}
+h5 {
+  font-family: "utopia-std-subhead", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px;
+  text-align: center;
+  color: #FAFAFF;
+}
+h6 {
+  font-family: "utopia-std-subhead", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  text-align: center;
+  color: #FAFAFF;
+}
+h7 {
+  font-family: "utopia-std-caption", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+  text-align: center;
+  color: #FAFAFF;
+}
+h8 {
+  font-family: "utopia-std-caption", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  text-align: center;
+  color: #FAFAFF;
+}
+h9 {
+  font-family: "utopia-std-caption", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  color: #FAFAFF;
+}
