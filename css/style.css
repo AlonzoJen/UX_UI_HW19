@@ -40,7 +40,7 @@ ul {
 .navigation {
   background-color: #1c1c1c;
   width: 100%;
-  position: sticky;
+  /* position: sticky; */
   top: 0px;
 }
 a:link {
@@ -76,11 +76,8 @@ a:active {
   padding: 0px 0px 100px 0px;
 }
 .aboutMe {
-  height: 75%;
-  width: 75%;
-  padding: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 5%;
+  padding: 10px;
   background-color: rgba(250, 250, 255);
   text-align: center;
 }
@@ -98,20 +95,362 @@ a:active {
   display: inline-block;
 }
 
-/* Footer CSS */
 
+/* My Skills CSS */
+.mySkillsSection {
+  margin: 5%;
+  padding: 5px 10px 15px 20px;
+  background-color: rgba(250, 250, 255, 0.90);
+}
+.flexContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.skillCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+}
+.skillImage {
+  object-fit: scale-down;
+  justify-self: center; 
+  align-self: start; 
+}
+.toolsList {
+  text-align: center;
+}
+
+
+/* My Work CSS */
+#myWorkSection {
+  margin: 10%;
+  background-color: #FAFAFF;
+}
+.myWork-Grid {  
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr;
+  grid-template-rows: .25fr .5fr .25fr;
+  margin: 5%;
+  padding: 10px;
+  background-color: rgba(250, 250, 255, 0.90);
+  gap: 0px 10px;
+  grid-auto-flow: row;
+  justify-content: space-around;
+  align-content: space-around;
+  justify-items: center;
+  align-items: start;
+  grid-template-areas:
+    "sectionTitle sectionTitle sectionTitle"
+    "project-card1 project-card2 project-card3"
+    "sectionClose sectionClose sectionClose";
+}
+
+.sectionTitle {
+  justify-self: center;
+  grid-area: sectionTitle;
+}
+
+.sectionClose {
+  justify-self: center;
+  align-self: start;
+  grid-area: sectionClose;
+}
+
+.project-card1 {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  padding: 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "image1 image1 image1"
+    "subTitle1 subTitle1 subTitle1"
+    "paragraph1 paragraph1 paragraph1";
+    justify-content: center; 
+    align-content: center; 
+    justify-items: center; 
+    align-items: end;
+    grid-area: project-card1;
+}
+
+.image1 { 
+  justify-self: center; 
+  align-self: start; 
+  grid-area: image1;
+  object-fit: scale-down;
+}
+
+.subTitle1 { 
+  text-align: center;
+  justify-self: center; 
+  align-self: start;
+  grid-area: subTitle1; 
+}
+
+.paragraph1 { 
+  justify-self: center; 
+  align-self: start; 
+  grid-area: paragraph1; 
+}
+
+.project-card2 {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  padding: 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "image2 image2 image2"
+    "subTitle2 subTitle2 subTitle2"
+    "paragraph2 paragraph2 paragraph2";
+    justify-content: center; 
+    align-content: center; 
+    justify-items: center; 
+    align-items: end;
+    grid-area: project-card2;
+}
+
+.image2 { 
+  justify-self: center; 
+  align-self: start; 
+  grid-area: image2;
+  object-fit: scale-down;
+}
+
+.subTitle2 { 
+  text-align: center;
+  justify-self: center; 
+  align-self: start;
+  grid-area: subTitle2; 
+}
+
+.paragraph2 { 
+  justify-self: center; 
+  align-self: start; 
+  grid-area: paragraph2; 
+}
+
+.project-card3 {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  padding: 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "image3 image3 image3"
+    "subTitle3 subTitle3 subTitle3"
+    "paragraph3 paragraph3 paragraph3";
+    justify-content: center; 
+    align-content: center; 
+    justify-items: center; 
+    align-items: end;
+    grid-area: project-card3;
+}
+
+.image3 {
+  justify-self: center; 
+  align-self: start; 
+  grid-area: image3;
+  object-fit: scale-down;
+}
+
+.subTitle3 { 
+  text-align: center;
+  justify-self: center; 
+  align-self: start;
+  grid-area: subTitle3; 
+}
+
+.paragraph3 { 
+  justify-self: center; 
+  align-self: start; 
+  grid-area: paragraph3; 
+}
+
+/* Contact Me CSS */
+#contactMeSection {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  margin: 5%;
+  padding: 1px;
+  gap: 0px 10px;
+  background-color: rgba(61, 67, 77, 0.99);
+}
+
+.contactMe-container {  
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-auto-columns: auto;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  grid-auto-flow: row;
+  justify-content: space-around;
+  align-content: space-around;
+  justify-items: center;
+  align-items: start;
+  grid-template-areas:
+    "contactCard"
+    "contactInfo"
+    "contactClosing";
+}
+
+.contactCard {  
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 0px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "headline headline"
+    "websiteIntro websiteAddress"
+    "socialIntro socialAddress";
+  justify-self: stretch;
+  align-self: center;
+  padding: 0px 20%;
+  padding-bottom: 2%;
+  grid-area: contactCard;
+  border-bottom: 4px solid #FAFAFF;
+  background-color: rgba(250, 250, 255, 0.30);
+}
+
+.headline {
+  justify-self: center;
+  align-self: center;
+  grid-area: headline;
+}
+h4#darkVar {
+  color: #FAFAFF;
+}
+
+.websiteIntro {
+  justify-self: center;
+  align-self: center;
+  padding: 10px;
+  grid-area: websiteIntro;
+}
+
+.websiteAddress { 
+  align-self: center;
+  padding: 10px;
+  grid-area: websiteAddress; 
+}
+
+.socialIntro {
+  justify-self: center;
+  align-self: center;
+  padding: 10px;
+  grid-area: socialIntro;
+}
+
+.socialAddress {
+  align-self: center;
+  padding: 10px;
+  grid-area: socialAddress;
+}
+
+.contactInfo {  
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 0px 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "contactSubtitle contactSubtitle contactSubtitle"
+    "icon1 phoneIntro numberInfo"
+    "icon2 emailIntro emailInfo";
+  justify-self: stretch;
+  align-self: center;
+  padding: 0px 30%;
+  padding-bottom: 2%;
+  grid-area: contactInfo;
+  border-bottom: 4px solid #FAFAFF;
+  background-color: rgba(250, 250, 255, 0.30);
+}
+
+.contactSubtitle {
+  justify-self: center;
+  align-self: center;
+  grid-area: contactSubtitle;
+}
+
+.icon1 {
+  justify-self: center;
+  align-self: center;
+  grid-area: icon1;
+}
+
+.phoneIntro {
+  justify-self: center;
+  align-self: center;
+  grid-area: phoneIntro;
+}
+
+.numberInfo {
+  align-self: center;
+  grid-area: numberInfo;
+}
+
+.icon2 {
+  justify-self: center;
+  align-self: center;
+  grid-area: icon2;
+}
+
+.emailIntro {
+  justify-self: center;
+  align-self: center;
+  grid-area: emailIntro;
+}
+
+.emailInfo {
+  align-self: center;
+  grid-area: emailInfo;
+}
+
+.contactClosing {  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "icon3"
+    "paragraphClosing";
+  justify-self: center;
+  align-self: center;
+  padding: 0px 10%;
+  grid-area: contactClosing;
+  border-bottom: 4px solid #FAFAFF;
+  background-color: rgba(250, 250, 255, 0.30);
+}
+
+.icon3 {
+  justify-self: center;
+  align-self: center;
+  padding-top: 100px;
+  grid-area: icon3;
+}
+.paragraphClosing {
+  justify-self: center; 
+  align-self: center; 
+  grid-area: paragraphClosing; 
+}
+
+/* Footer CSS */
 footer {
   background-color: #373738;
   width: 100%;
   bottom: 0px;
+  padding-top: 2%;
   /* position: sticky; */
   /* position: fixed; */
   text-align: center;
 }
-
-/* My Skills CSS */
-.flex-container {
-  display: flex;
+.copyright-line {
+  display: block;
 }
 
 /* Typography CSS */ 
@@ -145,7 +484,7 @@ h3 {
   font-style: normal;
   font-size: 50px;
   text-align: center;
-  color: #FAFAFF;
+  color: #3d434d;
 }
 h4 {
   font-family: "utopia-std-subhead", serif;
@@ -159,7 +498,7 @@ h5 {
   font-family: "utopia-std-subhead", serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 28px;
+  font-size: 36px;
   text-align: center;
   color: #FAFAFF;
 }
@@ -167,23 +506,23 @@ h6 {
   font-family: "utopia-std-subhead", serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 36px;
+  font-size: 30px;
   text-align: center;
   color: #FAFAFF;
 }
 h7 {
   font-family: "utopia-std-caption", serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
-  font-size: 36px;
+  font-size: 30px;
   text-align: center;
-  color: #FAFAFF;
+  color: #1c1c1c;
 }
 h8 {
   font-family: "utopia-std-caption", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 28px;
+  font-size: 26px;
   text-align: center;
   color: #FAFAFF;
 }
@@ -191,7 +530,18 @@ h9 {
   font-family: "utopia-std-caption", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   color: #FAFAFF;
+}
+h7#emphasisColor {
+  color: #990349;
+  ;
+}
+p#description {
+  color: #3d434d;
+  font-family: edita, serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: left;
 }

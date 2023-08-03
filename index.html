@@ -3,7 +3,7 @@
 <head>
   <link rel="stylesheet" href="https://use.typekit.net/adt4ajd.css">
   <link rel="stylesheet" href="css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -71,97 +71,78 @@
       My Skills
     </h4>
     <div class="flexContainer">
+      <!-- Child Container -->
       <div class="skillCard">
-        <img src="images/Prioritization Matrix.png" alt="Prioritization Matrix">
-        <h7>
+        <h7 id="emphasisColor">
           User Research
         </h7>
-        <p>
+        <div class="skillImage"><img src="images/Prioritization Matrix.png" alt="Prioritization Matrix" width="100%"></div>
+        <p id="description">
           This text describes how important user research is.
         </p>
       </div>
+      <!-- Child Container -->
       <div class="skillCard">
-        <img src="images/WeMind Sketch Mockups.png" alt="Images of hand drawn sketches">
-        <h7>
+        <h7 id="emphasisColor">
           Illustrating
         </h7>
-        <p>
+        <div class="skillImage"><img src="images/WeMind Sketch Mockups.png" alt="Images of hand drawn sketches" width="100%"></div>
+        <p id="description">
           This text describes how important it is to sketch out the initial prototype.
         </p>
       </div>
+      <!-- Child Container -->
       <div class="skillCard">
-        <img src="images/SAMHSA Annotations.png" alt="redlined low fidelity wireframe">
-        <h7>
+        <h7 id="emphasisColor">
           Information Architecture
         </h7>
-        <p>
+        <div class="skillImage"><img src="images/govtAnalysis.png" alt="redlined low fidelity wireframe" width="100%"></div>
+        <p id="description">
           This text describes how important Information Architecture is.
         </p>
       </div>
     </div>
+    <div class="toolsList">
+      <h7 id="emphasisColor">Tools I Know: Figma, AdobeXD, InVision, Google Drive, Photoshop</h7>
+    </div>
    </section>
 
    <!--  My Work section coded using CSS flex -->
-   <section id="myWork-Grid">
-    <h4> My Work </h4>
+  <div class="myWork-Grid">
+    <div class="sectionTitle"><h4>My Work</h4></div>
+    <div class="sectionClose"><h7 id="emphasisColor">View All Projects</h7></div>
 
-    <div class="project-card">
-      <img src="images/WeMind Mockup.png" alt="mobile prototype">
-      <h7>
-        Mobile Prototype:
-        WeMind
-      </h7>
-      <p>
-        For this project, the task was to create a mobile prototype. 
-        In this case, it was a mental health application that would 
-        enable users to access help with ease.
-      </p>
-      <button>
-        View More
-      </button>
+    <div class="project-card1">
+      <div class="image1"><img src="images/WeMindGroupMockup.png"mobile prototype" style="width: 100%;"></div>
+      <div class="subTitle1"><h7>Mobile Prototype:<br></h7>
+        <h7 id="emphasisColor">WeMind</h7></div>
+      <div class="paragraph1"><p id="description">For this project, the task was to create a mobile prototype. In this case, it was a mental health application that would enable users to access help with ease.</p>
+        <div class="viewMore"><button>View More</button></div>
+      </div>
     </div>
 
-    <div class="project-card">
-      <img src="images/SAMHSA Mockup.png" alt="website image on macbook">
-      <h7>
-        Government Agency Redesign:
-        SAMHSA.GOV
-      </h7>
-      <p>
-        Ever landed on a webpage that was shouting out for a makeover? 
-        That is what this project was for, to breathe life back into a 
-        government agency website. In this case it was for the 
-        Substance Abuse and Mental Health Services Administration.
-      </p>
-      <button>
-        View More
-      </button>
+    <div class="project-card2">
+      <div class="image2"><img src="images/SAMHSA Mockup.png" alt="desktop prototype" style="width: 100%;"></div>
+      <div class="subTitle2"><h7>Government Agency Redesign:<br></h7>
+        <h7 id="emphasisColor">SAMHSA.GOV</h7></div>
+      <div class="paragraph2"><p id="description">Ever landed on a webpage that was shouting out for a makeover? That’s what this project was for, to breathe life back into a government agency website. In this case it was for the Substance Abuse and Mental Health Services Administration.</p>
+        <div class="viewMore"><button>View More</button></div>
+      </div>
     </div>
 
-    <div class="project-card">
-      <img src="images/Compass Connections Mockup.png" alt="website image on macbook">
-      <h7>
-        Non-Profit Agency Redesign:
-        Compass Connections
-      </h7>
-      <p>
-        This project was one that I became very passionate about. The 
-        agency is making such a positive impact on the lives of the 
-        children that do not have a voice. Redesigning this website 
-        will ensure more children get the help and resources that they 
-        desperately need. 
-      </p>
-      <button>
-        View More
-      </button>
+    <div class="project-card3">
+      <div class="image3"><img src="images/Compass Connections Mockup.png" alt="desktop prototype" style="width: 100%;"></div>
+      <div class="subTitle3"><h7>Non-Profit Agency Redesign:<br></h7>
+        <h7 id="emphasisColor">Compass Connections</h7></div>
+      <div class="paragraph3"><p id="description">This project was one that I became very passionate about.The agency is making such a positive impact on the lives of the children that do not have a voice. Redesigning this website will ensure more children get the help and resources that they desperately need.</p>
+        <div class="viewMore"><button>View More</button></div>
+      </div>
     </div>
-    <h4>
-      View All Projects
-    </h4>
-   </section>
+  </div>
+
 
    <!--  Contact Me section -->
-   <section id="contactMe-container" class="contactMeSection">
+   <!-- <section id="contactMe-container" class="contactMeSection">
     <div class="contactCard">
       <h4>
         FIND ME ONLINE
@@ -185,7 +166,39 @@
       <img src="images/heartEyesEmoji.png" alt="heart eye emoji" height="100px" width="100px">
       <h5> I would love to talk with you to share my work and answer any questions you may have.</h5>
     </div>
-   </section>
+   </section> -->
+
+
+   <!--  Contact Me section -->
+   <section id="contactMeSection">
+    <div class="contactMe-container">
+     <div class="contactCard">
+       <div class="headline"><h4 id="darkVar">FIND ME ONLINE</h4></div>
+       <div class="websiteIntro"><H7 id="emphasisColor">My Website:</H7></div>
+       <div class="websiteAddress"><h7>alonzojen.github.io/a-designers-memoir</h7></div>
+       <div class="socialIntro"><h7 id="emphasisColor">My LinkedIn:</h7></div>
+       <div class="socialAddress"><h7>linkedin.com/in/jeanette-alonzo-uxui/></h7></div>
+     </div>
+ 
+     <div class="contactInfo">
+       <div class="contactSubtitle"><h5> Other Contact Information</h5></div>
+       <div class="icon1"><img src="images/phoneEmojiWhite.png" alt="phone emoji" height="80px" width="80px"></div>
+       <div class="phoneIntro"><h7 id="emphasisColor"> Phone: </h7></div>
+       <div class="numberInfo"><h7> (210) 663-3853</h7></div>
+       <div class="icon2"><img src="images/paperPlaneEmojiWhite.png" alt="paper plane emoji" height="80px" width="80px"></div>
+       <div class="emailIntro"><h7 id="emphasisColor"> Email: </h7></div>
+       <div class="emailInfo"><h7> jalonzo0722@gmail.com</h7></div>
+     </div>
+ 
+     <div class="contactClosing">
+       <div class="icon3"><img src="images/heartEyesEmoji.png" alt="heart eye emoji" height="100px" width="100px"></div>
+       <div class="paragraphClosing"><h5> I would love to talk with you to share my work and answer any questions you may have.</h5></div>
+     </div>
+   </div>
+ </section>
+
+
+
 
    <!--  Footer  -->
   <footer>
