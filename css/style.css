@@ -132,7 +132,7 @@ a:active {
   margin: 10%;
   background-color: #FAFAFF;
 }
-.myWork-Grid {  
+#myWork-Grid {  
   display: grid;
   grid-template-columns: 1.5fr 1.5fr 1.5fr;
   grid-template-rows: .25fr .5fr .25fr;
