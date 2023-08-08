@@ -100,6 +100,7 @@ a:active {
   top: 0;
   left: 0;
   z-index: 99;
+  opacity: 90%;
 }
 .aboutMeCard:hover .image-top
 {
@@ -243,25 +244,25 @@ h7#closeTitle
   text-align: center;
   padding: 5px 15px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
-a.small:link {
+a.smallButton:link {
   color: #FAFAFF;
-  font-size: 10px;
+  font-size: 16px;
 }
-a.small:visited {
+a.smallButton:visited {
   color: #FAFAFF;
-  font-size: 10px;
+  font-size: 16px;
   text-decoration: none;
 }
-a.small:active {
+a.smallButton:active {
   color: #FAFAFF;
-  font-size: 10px;
+  font-size: 16px;
   text-decoration: none;
 }
-a.small:hover {
-  color: #FAFAFF;
-  font-size: 10px;
+a.smallButton:hover {
+  color: #1c1c1c;
+  font-size: 16px;
   text-decoration: none;
 }
 
